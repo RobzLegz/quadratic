@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool check_number(string str)
+bool checkNumber(string str)
 {
     for (int i = 0; i < str.length(); i++)
         if (isdigit(str[i]) == false)
@@ -19,7 +19,7 @@ int getNumber(string eq)
     cout << "Enter " << eq << ": ";
     cin >> num;
 
-    while (!check_number(num))
+    while (!checkNumber(num))
     {
         cout << "Invalid input. Try again." << endl;
         cout << "Enter " << eq << ": ";
